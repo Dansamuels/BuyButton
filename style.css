@@ -1,0 +1,55 @@
+#container{
+    text-align: center;
+    margin: 0 auto;
+    align-content: center;
+    justify-items: center;
+}
+
+.button{
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    color:white;
+    padding: 8px;
+    background-color: blue;
+    border-color: blue;
+    border-radius: 15px;
+    border-style: double;
+    transition: background-color 1s, border-color 1s, padding 0.25s, font-size 1s;
+    animation-name:Shift;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+svg{
+    fill: aliceblue;
+    height: 14px;
+    transition: height 1s,transform 0.5s;
+    animation-name: Shift;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+.button:hover{
+    font-size: 22px;
+    background-color: darkblue;
+    border-color: darkblue;
+    color: aliceblue;
+    padding: 9px;
+    animation-iteration-count: 3;
+   
+} 
+svg:hover{
+    height: 16px;
+    animation-iteration-count: 3;
+}
+
+@keyframes Shift{
+    0%{transform: rotate(1deg);}
+    25%{transform: rotate(-1deg);}
+    50%{transform: rotate(1deg);}
+    75%{transform: rotate(-1deg);}
+    100%{transform: rotate(1deg);}
+}
+
+
